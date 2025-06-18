@@ -35,11 +35,6 @@ const [bookings, setBookings] = useState(userBookingsDummyData)
         </p>
 
       <div className='flex items-center gap-1 text-sm text-gray-500'>
-      <img src={assets.locationIcon} alt="location-icon" />
-      <span>{booking.hotel.address}</span>
-      </div>
-
-      <div className='flex items-center gap-1 text-sm text-gray-500'>
       <img src={assets.guestsIcon} alt="guests-icon" />
       <span>Guests: {booking.guests}</span>
       </div>

@@ -23,14 +23,40 @@ import badgeIcon from './badgeIcon.svg'
 import menuIcon from './menuIcon.svg'
 import closeMenu from './closeMenu.svg'
 import guestsIcon from './guestsIcon.svg'
+
+
+
+//room images 
 import roomImg1 from './roomImg1.png'
 import roomImg2 from './roomImg2.png'
 import roomImg3 from './roomImg3.png'
 import roomImg4 from './roomImg4.png'
 import regImage from './regImage.png'
+
+//deluxe
+import deluxefamilyroom1 from "./Deluxe_Family_Room1.jpg";
+import deluxefamilyroom2 from "./Deluxe_Family_Room2.jpg";
+//standard
+import standardroom1 from "./Standard_Room1.jpg";
+import standardroom2 from "./Standard_Room2.jpg";
+import standardroom3 from "./Standard_Room3.jpg";
+import standardroom4 from "./Standard_Room4.jpg";
+//JR
+import JRroom1 from "./Junior_Suite_Room1.jpg";
+import JRroom2 from "./Junior_Suite_Room2.jpg";
+//standard family room
+import familyroom1 from "./Family_Room1.jpg";
+import familyroom2 from "./Family_Room2.jpg";
+
+
+
+//room images pero nasa exclusive page
 import exclusiveOfferCardImg1 from "./exclusiveOfferCardImg1.png";
 import exclusiveOfferCardImg2 from "./exclusiveOfferCardImg2.png";
 import exclusiveOfferCardImg3 from "./exclusiveOfferCardImg3.png";
+
+
+
 import addIcon from "./addIcon.svg";
 import dashboardIcon from "./dashboardIcon.svg";
 import listIcon from "./listIcon.svg";
@@ -128,27 +154,67 @@ export const userDummyData = {
 }
 
 // Hotel Dummy Data
-export const hotelDummyData = {
+
+
+//family deluxe room
+export const hotelDummyData1 = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Urbanza Suites",
+    "name": "Family Deluxe Room",
     "address": "Main Road  123 Street , 23 Colony",
     "contact": "+0123456789",
-    "owner": userDummyData,
     "city": "New York",
     "createdAt": "2025-04-10T06:22:11.663Z",
     "updatedAt": "2025-04-10T06:22:11.663Z",
     "__v": 0
 }
 
+//standard room
+export const hotelDummyData2 = {
+    "_id": "67f76393197ac559e4089b72",
+    "name": "Standard Room",
+    "address": "Main Road  123 Street , 23 Colony",
+    "contact": "+0123456789",
+    "city": "New York",
+    "createdAt": "2025-04-10T06:22:11.663Z",
+    "updatedAt": "2025-04-10T06:22:11.663Z",
+    "__v": 0
+}
+
+
+//junior suite room
+export const hotelDummyData3 = {
+    "_id": "67f76393197ac559e4089b72",
+    "name": "JR Suite Room",
+    "address": "Main Road  123 Street , 23 Colony",
+    "contact": "+0123456789",
+    "city": "New York",
+    "createdAt": "2025-04-10T06:22:11.663Z",
+    "updatedAt": "2025-04-10T06:22:11.663Z",
+    "__v": 0
+}
+
+//standard family room
+export const hotelDummyData4 = {
+    "_id": "67f76393197ac559e4089b72",
+    "name": "Family Room",
+    "address": "Main Road  123 Street , 23 Colony",
+    "contact": "+0123456789",
+    "city": "New York",
+    "createdAt": "2025-04-10T06:22:11.663Z",
+    "updatedAt": "2025-04-10T06:22:11.663Z",
+    "__v": 0
+}
+
+
 // Rooms Dummy Data
 export const roomsDummyData = [
     {
         "_id": "67f7647c197ac559e4089b96",
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData1,
         "roomType": "Double Bed",
-        "pricePerNight": 399,
+        "pricePerNight": 3400,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg1, roomImg2, roomImg3, roomImg4],
+        "images": [deluxefamilyroom1, deluxefamilyroom2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:26:04.013Z",
         "updatedAt": "2025-04-10T06:26:04.013Z",
@@ -156,11 +222,11 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76452197ac559e4089b8e",
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData2,
         "roomType": "Double Bed",
-        "pricePerNight": 299,
+        "pricePerNight": 2100,
         "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
+        "images": [standardroom2, standardroom1, standardroom3, standardroom4],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:25:22.593Z",
         "updatedAt": "2025-04-10T06:25:22.593Z",
@@ -168,11 +234,11 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f76406197ac559e4089b82",
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData3,
         "roomType": "Double Bed",
-        "pricePerNight": 249,
+        "pricePerNight": 4300,
         "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
-        "images": [roomImg3, roomImg4, roomImg1, roomImg2],
+        "images": [JRroom1, JRroom2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:24:06.285Z",
         "updatedAt": "2025-04-10T06:24:06.285Z",
@@ -180,11 +246,11 @@ export const roomsDummyData = [
     },
     {
         "_id": "67f763d8197ac559e4089b7a",
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData4,
         "roomType": "Single Bed",
-        "pricePerNight": 199,
+        "pricePerNight": 3100,
         "amenities": ["Free WiFi", "Room Service", "Pool Access"],
-        "images": [roomImg4, roomImg1, roomImg2, roomImg3],
+        "images": [familyroom1, familyroom2],
         "isAvailable": true,
         "createdAt": "2025-04-10T06:23:20.252Z",
         "updatedAt": "2025-04-10T06:23:20.252Z",
@@ -200,7 +266,7 @@ export const userBookingsDummyData = [
         "_id": "67f76839994a731e97d3b8ce",
         "user": userDummyData,
         "room": roomsDummyData[1],
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData2,
         "checkInDate": "2025-04-30T00:00:00.000Z",
         "checkOutDate": "2025-05-01T00:00:00.000Z",
         "totalPrice": 299,
@@ -216,7 +282,7 @@ export const userBookingsDummyData = [
         "_id": "67f76829994a731e97d3b8c3",
         "user": userDummyData,
         "room": roomsDummyData[0],
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData1,
         "checkInDate": "2025-04-27T00:00:00.000Z",
         "checkOutDate": "2025-04-28T00:00:00.000Z",
         "totalPrice": 399,
@@ -232,7 +298,7 @@ export const userBookingsDummyData = [
         "_id": "67f76810994a731e97d3b8b4",
         "user": userDummyData,
         "room": roomsDummyData[3],
-        "hotel": hotelDummyData,
+        "hotel": hotelDummyData2,
         "checkInDate": "2025-04-11T00:00:00.000Z",
         "checkOutDate": "2025-04-12T00:00:00.000Z",
         "totalPrice": 199,
